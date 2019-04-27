@@ -11,7 +11,7 @@ const tyrannosaurus = {
   diet: "carnivorous",
   weight: "7000kg",
   length: "12m",
-  period: "Late Cretaceious"
+  period: "Late Cretaceous"
 };
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 const stegosaurus = {
@@ -119,6 +119,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
+zooAnimals.forEach(zooAnimal => {animalNames.push(`Name: ${zooAnimal.animal_name}, Scientific: ${zooAnimal.scientific_name}.`)});
 console.log(animalNames);
 
 /* Request 2: .map()    
@@ -128,6 +129,7 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 */
 
 const lowerCase = [];
+zooAnimals.map(zooAnimal => {lowerCase.push(zooAnimal.animal_name.toLowerCase())});
 console.log(lowerCase); 
 
 /* Request 3: .filter() 
@@ -136,6 +138,7 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 const largerPopulation = [];
+zooAnimals.filter(zooAnimal => {largerPopulation.push(zooAnimal.population < 5)});
 console.log(largerPopulation);
 
 /* Request 4: .reduce() 
