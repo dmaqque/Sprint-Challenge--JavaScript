@@ -38,10 +38,10 @@ Methods set parameters for object.
 Closure deals with scopes -it allows inheritance.
 
 4. Describe the four rules of the 'this' keyword.
-- In the global scope, the value of 'this' is the window object. 
-- when calling a function with a dot, the object before the dot is 'this'
-- when using the constructor function, 'this' is the new object created and returned by the function. 
-- When call or apply methods are used, 'this' is explicitly defined.
+- In the global scope, the value of 'this' is the window object. (global) 
+- when calling a function with a dot, the object before the dot is 'this' (implicit)
+- when using the constructor function, 'this' is the new object created and returned by the function. (new)
+- When call or apply methods are used, 'this' is explicitly defined. (explicit)
 
 5. Why do we need super() in an extended class?
 Allows parent function the attributes of a child class.
